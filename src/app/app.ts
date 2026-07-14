@@ -14,7 +14,7 @@ export class App {
   protected readonly title = signal('taskly');
 
   users = DUMMY_USERS;
-  selectedUserId = 'u1';
+  selectedUserId?: string;
 
   get selectedUser() {
     return this.users.find(u => u.id === this.selectedUserId)!;
