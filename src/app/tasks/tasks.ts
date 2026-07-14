@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { TaskCard } from './task-card/task-card';
+import { NewTask } from './new-task/new-task';
 
 @Component({
   selector: 'app-tasks',
-  imports: [TaskCard],
+  imports: [TaskCard, NewTask],
   templateUrl: './tasks.html',
   styleUrl: './tasks.css',
 })
@@ -11,6 +12,7 @@ export class Tasks {
   @Input({required: true}) id!: string;
   @Input({required: true}) name!: string;
 
+  isAddingTask = false;
 
   tasks = [
     { id: 't1', userId: 'u1', title: 'Master Angular', summary: 'Learn the fundamentals of Angular', dueDate: '02-10-2023' },
@@ -34,6 +36,14 @@ export class Tasks {
 
   onCompleteTask(taskId: string) {
     this.tasks = this.tasks.filter(t => t.id !== taskId);
+  }
+
+  onStartAddTask(){
+    this.isAddingTask = true;
+  }
+
+  onCancelAddTask(){
+    this.isAddingTask = false;
   }
 
 }
