@@ -1,12 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { Header } from "./header/header";
-import { User } from "./user/user";
+import { UserCard } from "./user/user-card";
 import { DUMMY_USERS } from './dummy-users';
 import { Tasks } from './tasks/tasks';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, User, Tasks],
+  imports: [Header, UserCard, Tasks],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
