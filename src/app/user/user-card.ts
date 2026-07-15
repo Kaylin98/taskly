@@ -14,7 +14,7 @@ export class UserCard {
   @Output() select =  new EventEmitter<string>();
 
   get imagePath() {
-      return `/images/users/${this.user.avatar}`;
+      return `images/users/${this.user.avatar}`;
   }
   onSelectUser(){
     this.select.emit(this.user.id);
