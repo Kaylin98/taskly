@@ -6,8 +6,7 @@ Taskly is an Angular task manager where tasks are scoped per user. Pick a user f
 
 🔗 [https://kaylin98.github.io/taskly/](https://kaylin98.github.io/taskly/)
 
-![Taskly screenshot](<img width="916" height="863" alt="Screenshot 2026-07-15 155701" src="https://github.com/user-attachments/assets/39076636-b0de-417e-92bc-f56b4fb0b811" />
-)
+![Taskly screenshot](./screenshot.png)
 
 ## How it's built
 
