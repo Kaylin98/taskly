@@ -2,6 +2,13 @@
 
 Taskly is an Angular task manager where tasks are scoped per user. Pick a user from the list, see only their tasks, add new ones, and mark tasks done — everything is persisted to `localStorage`.
 
+## Live Demo
+
+🔗 [https://kaylin98.github.io/taskly/](https://kaylin98.github.io/taskly/)
+
+![Taskly screenshot](<img width="916" height="863" alt="Screenshot 2026-07-15 155701" src="https://github.com/user-attachments/assets/39076636-b0de-417e-92bc-f56b4fb0b811" />
+)
+
 ## How it's built
 
 **App shell ([app.ts](src/app/app.ts))** holds the list of users (currently [DUMMY_USERS](src/app/dummy-users.ts), no backend) and tracks `selectedUserId` as component state. Selecting a user re-renders the [Tasks](src/app/tasks/tasks.ts) component scoped to that user's id.
